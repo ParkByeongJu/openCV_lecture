@@ -2,10 +2,11 @@ import sys
 import cv2
 
 print("Hello OpenCV", cv2.__version__)
-img = cv2.imread("lenna.png")
+
+img = cv2.imread("./main/ch02/lenna.bmp")
 
 if img is None:
-    print("Image load failed!")
+    print("Image load failed")
     sys.exit()
 
 cv2.namedWindow("image")
